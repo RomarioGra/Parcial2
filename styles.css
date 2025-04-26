@@ -16,6 +16,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 1rem;
 }
 
 section {
@@ -91,7 +92,7 @@ section {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    height: 100vh; /* Ocupa la altura completa del viewport */
+    transform:scaleY(1.05);
 }
 
 
@@ -216,11 +217,11 @@ section {
     justify-content: center;
     align-items: center;
     padding: 1rem;
-    margin: 3rem;
+    margin: 5rem;
 }
 
 .title-container h1 {
-    font-size: 50px;
+    font-size: 40px;
     font-family: 'Noto Sans', sans-serif;
     font-weight: lighter;   
 }
@@ -278,6 +279,7 @@ section {
 
 .section-4 {
     background-color: #F1F2F3;
+    height:max-content;
 }
 
 .poster-container {
@@ -307,13 +309,146 @@ section {
     text-align: left;
 }
 
+.poster-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vacation-posters {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.vacation-poster {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+}
+
+.vacation-card {
+    width: 800px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.vacation-card img {
+    width: 100%;
+}
+
+.vacation-card-info {
+    display: flex;
+    background-color: #ffffff;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    height: 250px;  
+    width: 100%;
+    text-align: center;
+}
+
+.vacation-card-info h1 {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.section-5 {
+    background-image: url("images/more-background.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pricing {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 600px;
+}
+
+.pricing-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem;
+
+}
+
+.pricing-title {
+    display: flex;
+    text-transform: uppercase;
+    color: #113C80;
+    font-size: 20px;
+}
+
+.pricing-text {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.pricing-text h2 {
+    font-size: 20px;
+    font-weight: bolder;
+    color: #113C80;
+
+
+}
+
+.pricing-text p {
+    font-size: 15px;
+    font-weight: 300;
+    color: #113C80;
+    text-align: center;
+
+}
+
+strong {
+    font-weight: bold;
+    color: #113C80;
+
+}
+
+.pricing-text span {
+    color: #113C80;
+    font-size: 15px;
+    text-decoration: line-through;
+
+}
+
+.learn-more {
+    margin: 2rem;
+    padding: 1rem;
+    background-color: #9258AC;
+    text-decoration: none;
+    color: #ffff;
+    width: 300px;
+    text-align: center;
+    border-radius: 5rem;
+    font-size: 25px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.learn-more:hover {
+    background-color: #69407c;
+}
 
 footer {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-color: #E8C75C;
+    background-color: #ffffff;
 }
 
 footer p {
@@ -347,3 +482,4 @@ footer p {
 .buttons-container a:hover {
     font-weight: bold;
 }
+
